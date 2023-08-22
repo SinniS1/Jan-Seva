@@ -7,7 +7,9 @@ type HeaderType = {
 const Header = ({ images }: HeaderType) => {
   return (
     <>
-      <BannerCarousel images={images} />
+      <div className="pt-20">
+        <BannerCarousel images={images} />
+      </div>
     </>
   );
 };

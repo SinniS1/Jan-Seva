@@ -1,6 +1,7 @@
 import BannerCarousel from "@/components/ui/carousel";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
+import Hero from "@/app/components/Hero";
 export default function Home() {
   const images: string[] = [
     "/img1.jpg",
@@ -11,8 +12,11 @@ export default function Home() {
 
   return (
     <>
-      <Nav />
-      <Header images={images} />
+      <div className="relative">
+        <Nav />
+        <Header images={images} />
+        <Hero></Hero>
+      </div>
     </>
   );
 }

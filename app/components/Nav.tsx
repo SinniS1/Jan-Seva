@@ -5,14 +5,15 @@ import logo from "@/app/assets/logo.png";
 import Image from "next/image";
 import BannerCarousel from "@/components/ui/carousel";
 import Dropdown from "./Dropdown";
+import { Switch } from "@/components/ui/switch";
 
 type NavType = {};
 const Nav = ({}: NavType) => {
   return (
-    <main className="">
-      <nav className="mt-2 flex border-b-2  border-slate-200">
-        <div className="flex w-1/3 gap-4 ml-3 items-center justify-center   ">
-          <div className="relative h-20 w-20 mb-2">
+    <main className="fixed z-10 bg-white w-full border-b-2 border-slate-200">
+      <nav className="flex mx-[40px] my-2 ">
+        <div className="flex  gap-4  items-center justify-center">
+          <div className="relative h-20 w-20">
             <Image
               src={logo}
               alt="Blob"
@@ -25,9 +26,13 @@ const Nav = ({}: NavType) => {
             <span className="text-[#036C93]">sevaa</span>{" "}
           </h1>
         </div>
-        <div className="flex flex-1 gap-10 items-center mr-10 justify-end">
+        <div className="flex flex-1 gap-10 items-center  justify-end">
           <Dropdown />
-          <ul className="space-x-[40px] mb-2 flex items-center justify-center">
+          <ul className="gap-[30px]  flex items-center justify-center">
+            <div className="flex justify-center items-center">
+              <Switch />
+              <h1 className="text-[1.1rem] font-semibold">&nbsp; हिंदी</h1>
+            </div>
             <a className="font-bold text-xl text-orange-500 " href="#">
               About Us
             </a>
