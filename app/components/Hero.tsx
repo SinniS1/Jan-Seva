@@ -1,7 +1,15 @@
-import { Switch } from "@/components/ui/switch";
 import React from "react";
+import Herocard from "./Herocard";
+import Cards from "./Cards";
+import BannerCarousel from "@/components/ui/carousel";
 
 const Hero = () => {
+  const footerimages: string[] = [
+    "/img1.jpg",
+    "/img2.jpg",
+    "/img3.jpg",
+    "/bacche.jpg",
+  ];
   return (
     <div>
       <main>
@@ -53,53 +61,62 @@ const Hero = () => {
         </div>
         {/* programms */}
 
-        <div className="mt-20 h-[30vh] w-full text-center">
-          <div>
-            <h1>Our Initiatives</h1>
-          </div>
-          <div className=" grid grid-cols-2">
-            <div className="">
-              <img src="" alt="" />
-              <div className="">
-                <h1>LEARNING FOR ALL</h1>
-                <p>
-                  Promoting inclusive education, nourishment, and comprehensive
-                  growth of children
-                </p>
-              </div>
-            </div>
-            <div className="">
-              <img src="" alt="" />
-              <div className="redBG w-fit text-start">
-                <h1>EMPOWERING HER</h1>
-                <p className="w-1/2">
-                  Uplifting young women and girls through involvement in the
-                  community
-                </p>
-              </div>
-            </div>
-            <div className="">
-              <img src="" alt="" />
-              <div className="">
-                <h1>WELLNESS ACCESS</h1>
-                <p>
-                  Bringing essential medical services to remote and underserved
-                  communities
-                </p>
-              </div>
-            </div>
-            <div className="">
-              <img src="" alt="" />
-              <div className="">
-                <h1>PATH TO PROSPERITY</h1>
-                <p>
-                  Imparting skills and aiding the career journey of
-                  disadvantaged youth
-                </p>
-              </div>
-            </div>
+        <div className="mt-20  h-[30vh] flex flex-col gap-10 items-center w-full text-center">
+          <h1 className="text-[3rem] font-medium">Our Initiatives</h1>
+          <div className="  grid grid-cols-4 mx-20">
+            <Herocard
+              heading="LEARNING FOR ALL"
+              description="Promoting inclusive education, nourishment, and comprehensive growth of children"
+              images="/images/vc.svg"
+              customClasses="h-20 "
+              blob="/images/blob1.svg"
+            />
+            <Herocard
+              heading="WELLNESS ACCESS"
+              description="Bringing essential medical services to remote and underserved communities"
+              images="/images/spa.svg"
+              customClasses="h-20 "
+              blob="/images/blob2.svg"
+            />
+            <Herocard
+              heading="Learning For All"
+              description="Promoting inclusive education, nourishment, and comprehensive growth of children"
+              images="/images/entrepreneurs.svg"
+              blob="/images/blob3.svg"
+            />
+            <Herocard
+              heading="PATH TO PROSPERITY"
+              description="Imparting skills and aiding the career journey of disadvantaged youth"
+              images="/images/startup.svg"
+              blob="/images/blob4.svg"
+            />
           </div>
         </div>
+        <div className="flex my-20 justify-between mx-10 flex-wrap gap-10 ">
+          <Cards
+            heading="Knowledge Equality Initiative"
+            description="With our Knowledge Equality Initiative, we're committed to LEARNING FOR ALL. We believe in inclusive education that nurtures children's minds and fosters growth."
+            images="/images/child.jpg"
+          />
+          <Cards
+            heading="Empowerment Horizon"
+            description=" Through our Empowerment Horizon program, we're dedicated to EMPOWERING HER. We're on a mission to uplift young women and girls by engaging them in community-driven initiatives. "
+            images="/images/child2.jpg"
+          />
+          <Cards
+            heading="Wellness Outreach"
+            description="  Join us in our Wellness Outreach endeavor as we ensure WELLNESS ACCESS for all. Our focus is on bringing crucial medical services to remote and underserved communities."
+            images="/images/child3.jpg"
+          />
+          <Cards
+            heading="Prosperity Navigator"
+            description="Embark on the PATH TO PROSPERITY with our Prosperity Navigator program. We're dedicated to imparting valuable skills and aiding the career journey of disadvantaged youth."
+            images="/images/child4.jpg"
+          />
+        </div>
+
+        <BannerCarousel customClasses="w-[50vw]" images={footerimages} />
+        {/* <BannerCarousel /> */}
       </main>
     </div>
   );
