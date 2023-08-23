@@ -14,7 +14,6 @@ import Hero from "@/app/components/Hero";
   return (
     <>
       <div className="relative">
-        <Nav />
         <Header images={images} />
         <Hero></Hero>
         {/*  <Footer /> */}
