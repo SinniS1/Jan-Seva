@@ -2,20 +2,25 @@ import React from "react";
 import Herocard from "./Herocard";
 import Cards from "./Cards";
 import BannerCarousel from "@/components/ui/carousel";
+import AlignmentCards from "./AlignmentCards";
+import { Separator } from "@/components/ui/separator";
 
 const Hero = () => {
   const footerimages: string[] = [
-    "/img1.jpg",
-    "/img2.jpg",
-    "/img3.jpg",
-    "/bacche.jpg",
+    "/images/ImgCarousel/boy.jpg",
+    "/images/ImgCarousel/boy-student.jpg",
+    "/images/ImgCarousel/boy-student2.jpg",
+    "/images/ImgCarousel/chote-boys.jpg",
+    "/images/ImgCarousel/girl-student.jpg",
+    "/images/ImgCarousel/girl-student2.jpg",
+    "/images/ImgCarousel/hifi-child.jpg",
   ];
   return (
     <div>
       <main>
         <div className="flex flex-1 justify-center text-center">
-          <h1 className="text-[1.2rem] w-1/2 mt-10 ">
-            Jansevaa is an NGO foundation that offers comprehensive support in
+          <h1 className="text-[1.2rem] w-9/10 mt-20 ">
+            Jansevaa Foundation is an NGO that offers comprehensive support in
             the fields of &nbsp;
             <span className="font-semibold bg-yellow-200 ">
               medical assistance, student education, and training programs.
@@ -114,9 +119,34 @@ const Hero = () => {
             images="/images/child4.jpg"
           />
         </div>
-
-        <BannerCarousel customClasses="w-[50vw]" images={footerimages} />
-        {/* <BannerCarousel /> */}
+        <div className="flex justify-center relative items-center my-15 mb-[10vh]  ">
+          <BannerCarousel customClasses="w-[70vw]" images={footerimages} />
+          {/* <BannerCarousel /> */}
+        </div>
+        {/* <div className="my-5">
+          <Separator />
+        </div> */}
+        <div className="bg-[#E2EAFC] py-10">
+          <div className="flex justify-center items-center pt-5">
+            <h1 className="text-[3rem]  font-semibold">Our Endeavors</h1>
+          </div>
+          <AlignmentCards
+            heading="Jansevaa is a notable NGO foundation renowned for its multifaceted support in critical areas such as medical aid, student education, and training initiatives. Their profound commitment to creating a positive societal impact is exemplified through their dedicated efforts in these key domains. "
+            /*   description="no desc" */
+            images="/img3.jpg"
+          />
+          <AlignmentCards
+            heading="Through their comprehensive approach, Jansevaa offers vital medical assistance, ensures access to quality education for students, and imparts essential skills through various training programs. "
+            /*     description="no desc" */
+            images="/img3.jpg"
+            isImageLeft={true}
+          />
+          <AlignmentCards
+            images="/img3.jpg"
+            heading="This organization's unwavering dedication to fostering positive change is evident in their holistic approach to uplifting communities and individuals in need."
+            /*       description="no desc" */
+          />
+        </div>
       </main>
     </div>
   );

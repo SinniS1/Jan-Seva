@@ -110,3 +110,9 @@
     background-position: 0 0;
   }
 }
+
+.hover-h1 {
+  font-size: 3rem;
+  color: #00ffd5;
+  font-weight: 3rem;
+}
