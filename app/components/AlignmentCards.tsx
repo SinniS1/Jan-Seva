@@ -4,7 +4,7 @@ import "./style.css";
 
 type AlignmentCardsType = {
   heading: string;
-  description?: string;
+  cardtext?: string;
   images: string;
   /*   blob?: string; */
   isImageLeft?: boolean;
@@ -12,7 +12,7 @@ type AlignmentCardsType = {
 
 const AlignmentCards = ({
   heading,
-  description,
+  cardtext,
   images,
   isImageLeft,
 }: /*  blob,*/
@@ -34,15 +34,14 @@ AlignmentCardsType) => {
           width={400}
           height={440}
         />
-        <span className="absolute hover-h1 left-0 transition-transform duration-700 group-hover:transform group-hover:bottom-10 text-white font-semibold  -bottom-10 ">
-          Nigga
+        <span className="absolute hover-h1 left-0 transition-transform duration-700 group-hover:transform group-hover:bottom-10 text-white font-semibold  -bottom-20 ">
+          {cardtext}
         </span>
       </div>
 
       {/* Text container */}
       <div className="w-2/3">
         <h1 className="text-xl text-start font-semibold ">{heading}</h1>
-        <p className="">{description}</p>
       </div>
     </div>
   );

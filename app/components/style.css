@@ -113,6 +113,54 @@
 
 .hover-h1 {
   font-size: 3rem;
-  color: #00ffd5;
+  color: #fff;
   font-weight: 3rem;
+  transition: all 0.35s ease-in-out;
+}
+
+/* footer */
+
+.footer-img {
+  background-image: url("/images/blobwave.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 50vh;
+}
+
+/* footer-link */
+
+.footer-underline {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-underline:hover {
+  color: #ffffff;
+}
+
+.footer-underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-bottom: -2.5px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #ffff;
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 24%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.footer-underline:hover::before {
+  transform: scaleX(1);
 }
