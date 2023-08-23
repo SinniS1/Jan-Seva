@@ -19,7 +19,7 @@ const Hero = () => {
     <div>
       <main>
         <div className="flex flex-1 justify-center text-center">
-          <h1 className="text-[1.2rem] w-9/10 mt-20 ">
+          <h1 className="text-[1.2rem] w-[90%] mt-20 ">
             Jansevaa Foundation is an NGO that offers comprehensive support in
             the fields of &nbsp;
             <span className="font-semibold bg-yellow-200 ">
@@ -133,18 +133,21 @@ const Hero = () => {
           <AlignmentCards
             heading="Jansevaa is a notable NGO foundation renowned for its multifaceted support in critical areas such as medical aid, student education, and training initiatives. Their profound commitment to creating a positive societal impact is exemplified through their dedicated efforts in these key domains. "
             /*   description="no desc" */
-            images="/img3.jpg"
+            images="/img1.jpg"
+            cardtext="NEW ATTRIBUTE"
           />
           <AlignmentCards
             heading="Through their comprehensive approach, Jansevaa offers vital medical assistance, ensures access to quality education for students, and imparts essential skills through various training programs. "
             /*     description="no desc" */
-            images="/img3.jpg"
+            images="/img2.jpg"
             isImageLeft={true}
+            cardtext="WELLNESS ACCESS"
           />
           <AlignmentCards
             images="/img3.jpg"
             heading="This organization's unwavering dedication to fostering positive change is evident in their holistic approach to uplifting communities and individuals in need."
             /*       description="no desc" */
+            cardtext="EMPOWERING HER"
           />
         </div>
       </main>
