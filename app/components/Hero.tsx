@@ -3,7 +3,7 @@ import Herocard from "./Herocard";
 import Cards from "./Cards";
 import BannerCarousel from "@/components/ui/carousel";
 import AlignmentCards from "./AlignmentCards";
-import { Separator } from "@/components/ui/separator";
+import Footer from "./Footer";
 
 const Hero = () => {
   const footerimages: string[] = [
@@ -126,7 +126,7 @@ const Hero = () => {
         {/* <div className="my-5">
           <Separator />
         </div> */}
-        <div className="bg-[#E2EAFC] py-10">
+        <div className="bg-[#E2EAFC] pt-10 ">
           <div className="flex justify-center items-center pt-5">
             <h1 className="text-[3rem]  font-semibold">Our Endeavors</h1>
           </div>
@@ -149,6 +149,9 @@ const Hero = () => {
             /*       description="no desc" */
             cardtext="EMPOWERING HER"
           />
+          <div>
+            <Footer />
+          </div>
         </div>
       </main>
     </div>

@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
-import Combobox from "@/components/ui/combobox";
 import "@/app/components/style.css";
 import logo from "@/app/assets/logo.png";
 import Image from "next/image";
-import BannerCarousel from "@/components/ui/carousel";
 import Dropdown from "@/app/components/Dropdown";
 import { Switch } from "@/components/ui/switch";
 import Link from "next/link";
@@ -40,9 +38,13 @@ const Nav = ({}: NavType) => {
             >
               About Us
             </Link>
-            <a className="font-bold text-xl hover-underline " href="#">
+            <Link
+              className="font-bold text-xl hover-underline "
+              href={"/Events"}
+            >
               Events
-            </a>
+            </Link>
+
             <Button className="border text-[1.1rem] font-bold border-blue-500 bg-transparent text-black hover:text-white hover:bg-blue-300">
               Donate
             </Button>
