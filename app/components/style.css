@@ -164,3 +164,9 @@
 .footer-underline:hover::before {
   transform: scaleX(1);
 }
+
+/* socials hover */
+
+.socials:hover {
+  transform: scale(1.2);
+}

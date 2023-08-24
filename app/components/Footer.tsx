@@ -44,15 +44,51 @@ const Footer = () => {
             </div>
             <div className="md:w-1/3 mt-6 md:mt-0">
               <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
-              <div className="flex space-x-4">
-                <a href="#" className="hover:text-gray-400">
-                  <i className="fab fa-facebook"></i>
+              <div className="flex  justify-start items-center  space-x-4">
+                <a href="#">
+                  <div className="">
+                    <img
+                      className="h-10 w-10 rounded-md hover:scale-110 transform transition-transform duration-700"
+                      src="/images/socials/facebook.svg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a href="#" className="">
+                  <div className="">
+                    <img
+                      className="h-8 w-8  hover:scale-110 transform transition-transform duration-700"
+                      src="/images/socials/linkedin.svg"
+                      alt=""
+                    />
+                  </div>
                 </a>
                 <a href="#" className="hover:text-gray-400">
-                  <i className="fab fa-twitter"></i>
+                  <div className="">
+                    <img
+                      className="h-10 w-10 rounded-md hover:scale-110 transform transition-transform duration-700"
+                      src="/images/socials/youtube.svg"
+                      alt=""
+                    />
+                  </div>
                 </a>
                 <a href="#" className="hover:text-gray-400">
-                  <i className="fab fa-instagram"></i>
+                  <div className="">
+                    <img
+                      className="h-10 w-10 rounded-md hover:scale-110 transform transition-transform duration-700"
+                      src="/images/socials/twitter.svg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a href="#" className="hover:text-gray-400">
+                  <div className="">
+                    <img
+                      className="h-10 w-10 rounded-md hover:scale-110 transform transition-transform duration-700"
+                      src="/images/socials/instagram.svg"
+                      alt=""
+                    />
+                  </div>
                 </a>
               </div>
             </div>
