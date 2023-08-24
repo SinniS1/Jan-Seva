@@ -1,3 +1,4 @@
+import { Separator } from "@/components/ui/separator";
 import React from "react";
 
 const page = () => {
@@ -26,7 +27,7 @@ const page = () => {
             thrive, regardless of their circumstances.
           </p>
           <img
-            className="h-9 z-10 right-[7%] -bottom-3 absolute"
+            className="h-9 z-1 right-[7%] -bottom-3 absolute"
             src="/icons/quotes-right.svg"
             alt="VHL"
           />
@@ -50,7 +51,7 @@ const page = () => {
             health challenges for the betterment of their life.
           </p>
           <img
-            className="h-9 z-10 right-[8%] -bottom-3 absolute"
+            className="h-9 z-1 right-[8%] -bottom-3 absolute"
             src="/icons/quotes-right.svg"
             alt="VHL"
           />
@@ -84,7 +85,7 @@ const page = () => {
             dreams.
           </p>
           <img
-            className="h-9 z-10 right-[11%] -bottom-3 absolute"
+            className="h-9 z-1 right-[11%] -bottom-3 absolute"
             src="/icons/quotes-right.svg"
             alt="VHL"
           />
@@ -95,7 +96,7 @@ const page = () => {
             src="/icons/quotes-left.svg"
             alt="VHL"
           />
-          <p className="text-[1.2rem] w-[90%] text-center">
+          <p className="text-[1.2rem] w-[90%]">
             But our impact doesn't stop there. We recognize that true
             empowerment encompasses holistic growth. Through our diverse
             training initiatives, we empower individuals with essential skills
@@ -106,31 +107,61 @@ const page = () => {
             Jansevaa lies an unyielding dedication to fostering positive change.
           </p>
           <img
-            className="h-9 z-10 right-[9%] -bottom-3 absolute"
+            className="h-9 z-1 right-[9%] -bottom-3 absolute"
             src="/icons/quotes-right.svg"
             alt="VHL"
           />
         </div>
         <br />
       </div>
-      <div className="flex flex-row justify-center gap-24">
-        <p className="text-[1.2rem] w-[15vw] text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi atque
-          dolores tempora a harum saepe distinctio dignissimos eos iure quos
-          tenetur sequi perspiciatis facere sunt, consequatur unde quas dolorem
-          itaque.
-        </p>
-        <p className="text-[1.2rem] w-[15vw] text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi atque
-          dolores tempora a harum saepe distinctio dignissimos eos iure quos
-          tenetur sequi perspiciatis facere sunt, consequatur unde quas dolorem
-          itaque.
-        </p>
-        <p className="text-[1.2rem] w-[15vw] text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi atque
-          dolores tempora a harum saepe distinctio dignissimos eos iure quos
-          tenetur sequi perspiciatis facere sunt, consequatur unde quas dolorem
-          itaque.
+      <div className="flex flex-row justify-center gap-40">
+        <div className="flex flex-row gap-6">
+          <img className=" h-12" src="/icons/team.svg" alt="" />
+          <p className="text-[1.2rem] w-[15vw] ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi atque
+            dolores tempora a harum saepe distinctio
+          </p>
+        </div>
+        <div className="flex flex-row relative">
+          <img
+            className=" h-20 -left-[56%] -top-[10%] absolute"
+            src="/icons/motivation1.svg"
+            alt=""
+          />
+          <p className=" text-[1.2rem] w-[15vw] ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi atque
+            dolores tempora a harum saepe distinctio yo yo honey singh
+          </p>
+        </div>
+        <div className="flex flex-row relative">
+          <img
+            className="-top-[5%] -left-[45%] h-14 absolute"
+            src="/icons/trophy.svg"
+            alt=""
+          />
+          <p className="text-[1.2rem] w-[15vw] ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi atque
+            dolores tempora a harum saepe distinctio
+          </p>
+        </div>
+      </div>
+
+      <Separator className="w-[95vw] ml-[2vw] mt-16" />
+
+      <div className="flex items-center mt-16 ml-20 gap-16">
+        <img className="h-16" src="/icons/punch.svg" alt="VHL" />
+        <p className="text-[1.2rem] w-[75vw]">
+          With every medical camp, every scholarship, and every skill imparted,
+          we strive to uplift communities and individuals in need, creating a
+          ripple effect of change that resonates far beyond the present moment.
+          As you explore our website, we invite you to become a part of our
+          journey. Whether you choose to support our initiatives, volunteer your
+          time, or simply spread the word about our cause, your involvement
+          matters. Together, we can turn the tide of adversity into a sea of
+          opportunities. Join us in our mission to sow the seeds of change,
+          nurture them with compassion, and watch as they grow into a future
+          brimming with promise. Welcome to Jansevaa – where every action, no
+          matter how small, is a step towards a brighter tomorrow.
         </p>
       </div>
     </div>
