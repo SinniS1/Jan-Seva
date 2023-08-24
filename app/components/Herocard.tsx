@@ -3,7 +3,7 @@ import React from "react";
 type HerocardType = {
   heading: string;
   description: string;
-  images: string;
+  images?: string;
   blob?: string;
   customClasses?: string;
 };
@@ -28,7 +28,6 @@ const Herocard = ({
         <img
           src={blob}
           className={`w-[200px] absolute -top-5 left-10  -z-10`}
-          alt="wellness"
         />{" "}
         <div className="w-1/2">
           <h1 className="text-lg font-semibold uppercase">{heading}</h1>

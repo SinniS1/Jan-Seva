@@ -16,7 +16,7 @@ export default function Home() {
       <div className="relative">
         <Header images={images} />
         <Hero></Hero>
-        {/*     <Footer /> */}
+        <Footer />
       </div>
     </>
   );

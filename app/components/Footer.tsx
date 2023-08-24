@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <div>
-        <footer className="bg-[#E2EAFC]  footer-img h-[60vh] text-white pt-8">
+        <footer className="  footer-img h-[60vh] text-white pt-8">
           <div className="container  mt-[170px] mx-auto flex flex-col md:flex-row justify-between">
             <div className="md:w-1/3">
               <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
