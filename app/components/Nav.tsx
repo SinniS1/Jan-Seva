@@ -5,6 +5,11 @@ import Image from "next/image";
 import Dropdown from "@/app/components/Dropdown";
 import { Switch } from "@/components/ui/switch";
 import Link from "next/link";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 type NavType = {};
 const Nav = ({}: NavType) => {
@@ -46,6 +51,10 @@ const Nav = ({}: NavType) => {
             </Link>
 
             <Button className="border text-[1.1rem] font-bold border-blue-500 bg-transparent text-black hover:text-white hover:bg-blue-300">
+              {/* <Link
+                className="font-bold text-xl hover-underline "
+                href={"/Donation"}
+              ></Link> */}
               Donate
             </Button>
             <Button className=" text-[1.1rem] font-semibold glow-on-hover">
