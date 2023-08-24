@@ -4,8 +4,9 @@ import "@/app/components/style.css";
 import logo from "@/app/assets/logo.png";
 import Image from "next/image";
 import BannerCarousel from "@/components/ui/carousel";
-import Dropdown from "./Dropdown";
+import Dropdown from "@/app/components/Dropdown";
 import { Switch } from "@/components/ui/switch";
+import Link from "next/link";
 
 type NavType = {};
 const Nav = ({}: NavType) => {
@@ -33,9 +34,12 @@ const Nav = ({}: NavType) => {
               <Switch />
               <h1 className="text-[1.1rem] font-semibold">&nbsp; हिंदी</h1>
             </div>
-            <a className="font-bold text-xl text-orange-500 " href="#">
+            <Link
+              className="font-bold text-xl text-orange-500 "
+              href={"/Aboutus"}
+            >
               About Us
-            </a>
+            </Link>
             <a className="font-bold text-xl hover-underline " href="#">
               Events
             </a>

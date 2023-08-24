@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-        <Nav />
         <Header images={images} />
         <Hero></Hero>
         <Footer />
