@@ -1,3 +1,4 @@
+'use client'
 import { Button } from "@/components/ui/button";
 import "@/app/components/style.css";
 import logo from "@/app/assets/logo.png";
@@ -10,31 +11,39 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { ContextAccess } from "./ContextAccess";
 
 type NavType = {};
 const Nav = ({}: NavType) => {
+  const {toggleLang } = ContextAccess();
   return (
     <main className="fixed z-10 bg-white w-full border-b-2 border-slate-200">
       <nav className="flex mx-[40px] my-2 ">
-        <div className="flex  gap-4  items-center justify-center">
-          <div className="relative h-20 w-20">
-            <Image
-              src={logo}
-              alt="Blob"
-              fill
-              style={{ objectFit: "contain", position: "absolute", inset: "0" }}
-            />
+        <Link href={"/"}>
+          <div className="flex  gap-4  items-center justify-center">
+            <div className="relative h-20 w-20">
+              <Image
+                src={logo}
+                alt="Blob"
+                fill
+                style={{
+                  objectFit: "contain",
+                  position: "absolute",
+                  inset: "0",
+                }}
+              />
+            </div>
+            <h1 className="uppercase font-bold text-3xl font-serif">
+              <span className="text-orange-500">Jan</span>{" "}
+              <span className="text-[#036C93]">sevaa</span>{" "}
+            </h1>
           </div>
-          <h1 className="uppercase font-bold text-3xl font-serif">
-            <span className="text-orange-500">Jan</span>{" "}
-            <span className="text-[#036C93]">sevaa</span>{" "}
-          </h1>
-        </div>
+        </Link>
         <div className="flex flex-1 gap-10 items-center  justify-end">
           <Dropdown />
           <ul className="gap-[30px]  flex items-center justify-center">
             <div className="flex justify-center items-center">
-              <Switch />
+              <Switch onClick={() => toggleLang()} />
               <h1 className="text-[1.1rem] font-semibold">&nbsp; हिंदी</h1>
             </div>
             <Link
